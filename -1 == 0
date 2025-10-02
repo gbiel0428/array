@@ -1,0 +1,14 @@
+import os
+os.system("cls")
+
+
+quantidade = 5
+lista_valor = []
+
+for i in range(quantidade):
+    valor = int(input(f"Informe um {i + 1}ª valor: "))
+    if valor < 0:
+         valor = 0
+    lista_valor.append(valor)
+    
+print(f"Os valores informados foram: {lista_valor}")
