@@ -1,0 +1,27 @@
+import os
+os.system("cls")
+
+listas_notas = []
+
+quantidade = 5
+
+for i in range(quantidade):
+    nota = int(input(f"Digite a {i + 1}ª nota: "))
+    listas_notas.append(nota)
+    
+Menor_valor = min(listas_notas)
+Maior_valor = max(listas_notas)
+
+
+if nota >= 7:
+    print(f"Voce esta Aprovado.")
+elif nota >= 5:
+    print(f"Voce esta em Recuperaçao.")
+if nota < 5:
+    print(f"Voce esta Reprvoado.")
+    
+media = sum(listas_notas) / len(listas_notas)
+
+print(F"Sua media foi: {media}")
+print(f"O menor valor foi: {Menor_valor}")
+print(f"O maior valor foi: {Maior_valor}")
