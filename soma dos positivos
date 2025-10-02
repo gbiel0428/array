@@ -1,0 +1,22 @@
+import os
+os.system("cls")
+
+listas_numero = []
+
+quantidade = 5
+quant_negativo = 0
+soma = 0
+
+for i in range(quantidade):
+    numero = int(input(f"Digite a {i + 1}ª nota: "))
+    listas_numero.append(numero)
+    
+    if numero == 0:
+        print(f"O numero é neutro.")
+    if numero >= 1:
+        soma = numero + numero
+    else:
+        quant_negativo += 1
+
+print(f"A quantidade de numeros negativo  é: {quant_negativo}")
+print(f"A soma dos numeros positivos é: {soma}")
