@@ -14,7 +14,7 @@ for i in range(quantidade):
     if numero == 0:
         print(f"O numero é neutro.")
     if numero >= 1:
-        soma = numero + numero
+        soma = sum(listas_numero)
     else:
         quant_negativo += 1
 
