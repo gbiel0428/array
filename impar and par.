@@ -1,0 +1,20 @@
+import os
+os.system("cls")
+
+lista_valor = []
+
+quant = 6
+pares = 0
+impares = 0
+
+for i in range(quant):
+    Numero = int(input(F"Digite um {i + 1}ª Numero: "))
+    if  Numero % 2 == 0 :
+        pares += 1
+        print(f"O numero {Numero} é par.")
+    else:
+        impares += 1
+        print(f"O numero {Numero} é impar.")
+    lista_valor.append(Numero)
+    
+print(f"Os numeros Digitados foram: {lista_valor}") 
